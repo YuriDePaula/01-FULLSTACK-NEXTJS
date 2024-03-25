@@ -8,13 +8,13 @@ import Menu from "./patterns/Menu/Menu";
 
 export default function HomeScreen(){
 
-const theme = useTheme();
+  const theme = useTheme();
 
   return (
     <Box
       tag="main"
-      styleSheet={{
-        backgroundColor: theme.colors.neutral.x400,
+      stylesheet={{
+        backgroundColor: theme.colors.neutral.x000,
         flex: 1,
         alignItems: 'center'
       }}

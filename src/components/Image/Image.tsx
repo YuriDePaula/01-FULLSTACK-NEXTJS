@@ -4,7 +4,7 @@ import { StyleSheet } from "@src/theme/StyleSheet";
 interface ImageProps {
   src: string;
   alt: string;
-  styleSheet?: StyleSheet;
+  stylesheet?: StyleSheet;
 }
 
 export default function Image ( { src, alt, ...props } : ImageProps ) {

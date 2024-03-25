@@ -8,7 +8,7 @@ export default function HomeScreen() {
   return (
     <Box
       tag="main"
-      styleSheet={{
+      stylesheet={{
         fontFamily: theme.typography.fontFamily,
         backgroundColor: {
           xs: 'red',

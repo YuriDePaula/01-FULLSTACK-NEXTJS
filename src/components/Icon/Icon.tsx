@@ -12,17 +12,16 @@ const iconSizes = {
 
 interface IconProps {
   name: keyof typeof icons;
-  styleSheet?: StyleSheet;
+  stylesheet?: StyleSheet;
   size?: keyof typeof iconSizes;
 }
 export default function Icon({ size, name, ...props }: IconProps) {
   const CurrentIcon = icons[name];
   if(!CurrentIcon) return <>"${name}" is not a valid <Icon /></>;
   return (
-    // <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <BaseComponent
       as="svg"
-      styleSheet={{
+      stylesheet={{
         width: iconSizes[size],
         height: iconSizes[size],
       }}
